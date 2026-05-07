@@ -21,7 +21,7 @@ enable_s3_versioning = true
 
 # Email address to receive CloudWatch alerts
 # NOTE: You MUST confirm the subscription in your email after deployment!
-alert_email = "sivaganesh.t2004@gmail.com"
+alert_email = "your-email@gmail.com"
 
 # Optional: SMS alerts for critical issues (format: +1234567890)
 # WARNING: SMS alerts may incur additional AWS charges
