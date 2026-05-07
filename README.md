@@ -8,37 +8,37 @@ Architecture
 <img width="1116" height="646" alt="Screenshot from 2026-05-07 22-02-56" src="https://github.com/user-attachments/assets/4a50e2ee-e911-4b0c-9b51-6b7f3686765a" />
 
 Features
-   Image upload triggers processing via AWS Lambda
-   Image compression, format conversion (JPEG, PNG, WEBP), thumbnail generation
-   Monitoring using Amazon CloudWatch
-   Structured logging with Amazon CloudWatch Logs
-   Real-time alerts using Amazon SNS
+• Image upload triggers processing via AWS Lambda
+• Image compression, format conversion (JPEG, PNG, WEBP), thumbnail generation
+• Monitoring using Amazon CloudWatch
+• Structured logging with Amazon CloudWatch Logs
+• Real-time alerts using Amazon SNS
 
 Architecture Flow
-  Upload image to S3
-  S3 triggers Lambda function
-  Lambda processes the image
-  Logs and metrics sent to CloudWatch
-  Alerts triggered via SNS (Email)
+• Upload image to S3
+• S3 triggers Lambda function
+• Lambda processes the image
+• Logs and metrics sent to CloudWatch
+• Alerts triggered via SNS (Email)
 
 Observability
-  Custom Metrics
-    Processing Time (ms)
-    Images Processed
-    Success / Failure Count
+• Custom Metrics
+• Processing Time (ms)
+• Images Processed
+• Success / Failure Count
 
-  Logs
-    Request ID tracking
-    Execution time
-    Error tracing
+Logs
+• Request ID tracking
+• Execution time
+• Error tracing
 
-  Alerts
-    Email notification on failure or anomalies
+Alerts
+• Email notification on failure or anomalies
 
-  Tech Stack
-    Amazon Web Services (S3, Lambda, CloudWatch, SNS)
-    Terraform (Infrastructure as Code)
-    Python (Boto3, Pillow)
+Tech Stack
+• Amazon Web Services (S3, Lambda, CloudWatch, SNS)
+• Terraform (Infrastructure as Code)
+• Python (Boto3, Pillow)
 
 
 How to Deploy
@@ -46,7 +46,7 @@ How to Deploy
   terraform init
   terraform apply
 
- Screenshots
+Screenshots
    CloudWatch Dashboard
    <img width="2388" height="1282" alt="Screenshot from 2026-05-07 22-04-54" src="https://github.com/user-attachments/assets/edac5a51-2ec8-4638-a538-3c36271434c7" />
 
@@ -60,16 +60,16 @@ How to Deploy
 
 
 Key Learnings
- Event-driven architecture (S3 → Lambda)
- Building observable systems (Logs + Metrics + Alerts)
- Serverless processing pipelines
- Real-time monitoring & alerting
+• Event-driven architecture (S3 → Lambda)
+• Building observable systems (Logs + Metrics + Alerts)
+• Serverless processing pipelines
+• Real-time monitoring & alerting
 
 Future Improvements
- Add auto-remediation using AWS Lambda
- Integrate Slack alerts
- Add CloudWatch dashboard enhancements
- Implement anomaly detection
+• Add auto-remediation using AWS Lambda
+• Integrate Slack alerts
+• Add CloudWatch dashboard enhancements
+• Implement anomaly detection
 
 Author
  Sivaganesh T
